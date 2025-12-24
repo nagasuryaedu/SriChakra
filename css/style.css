@@ -1,0 +1,156 @@
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --accent-color: #ffc107;
+    --dark-bg: #0f172a;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.glass-nav {
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+}
+
+.glass-nav.scrolled {
+    padding: 0.8rem 0;
+    background: rgba(15, 23, 42, 0.95);
+}
+
+.nav-link {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    min-height: 600px;
+    background: url('../assets/Heropage.webp') no-repeat center center/cover;
+    position: relative;
+    margin-top: -76px;
+    /* Offset navbar height */
+    padding-top: 76px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.6) 100%);
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #ffc107, #ffdb4d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(45deg, #0d6efd, #0056b3);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(13, 110, 253, 0.3);
+}
+
+.btn-warning {
+    background: linear-gradient(45deg, #ffc107, #ffca2c);
+    border: none;
+    color: #000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-warning:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 193, 7, 0.3);
+}
+
+/* Courses Section */
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+.divider {
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+.course-card {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hover-lift:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+}
+
+.icon-box {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover .icon-box {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Contact Section */
+.icon-box-sm {
+    width: 50px;
+    height: 50px;
+}
+
+.map-container iframe {
+    filter: grayscale(100%) invert(92%) contrast(83%);
+}
+
+/* Modal */
+.glass-modal {
+    background: rgba(20, 30, 50, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.btn-close-white {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .hero-section {
+        height: auto;
+        padding: 150px 0 100px;
+    }
+
+    .glass-nav {
+        background: rgba(15, 23, 42, 0.98);
+    }
+}
