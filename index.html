@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srichakra Vocational Junior College</title>
+    <meta name="description"
+        content="Srichakra Vocational Junior College - Empowering students with practical skills for a bright future.">
+    <link rel="icon" type="image/svg+xml" href="assets/Icon.svg">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+                <i class="fas fa-graduation-cap me-2 text-warning"></i>
+                <span>Srichakra<span class="text-warning">College</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button class="btn btn-warning rounded-pill px-4 fw-bold" data-bs-toggle="modal"
+                            data-bs-target="#applyModal">Apply Now</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center text-white">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative z-2">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill">Admissions Closed 2025</span>
+                    <h1 class="display-3 fw-bold mb-4">Shape Your Future at <span class="text-gradient">Srichakra</span>
+                    </h1>
+                    <p class="lead mb-5 opacity-90">Empowering the next generation with practical vocational skills and
+                        industry-ready expertise.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <button class="btn btn-primary btn-lg rounded-pill px-5" data-bs-toggle="modal"
+                            data-bs-target="#applyModal">Get Started</button>
+                        <a href="#courses" class="btn btn-outline-light btn-lg rounded-pill px-5">Explore Courses</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-primary fw-bold text-uppercase ls-2">Our Programs</h6>
+                <h2 class="fw-bold display-5">Vocational Courses</h2>
+                <div class="divider mx-auto mt-3"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- CSE -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-card h-100 p-4 bg-white rounded-4 shadow-sm hover-lift">
+                        <div
+                            class="icon-box bg-primary-subtle text-primary mb-4 rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="fas fa-laptop-code fa-2x"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Computer Science & Engineering (CSE)</h4>
+                        <p class="text-muted mb-4">Master the fundamentals of computing, programming, and software
+                            development.</p>
+                        <a href="#" class="btn-link text-primary fw-bold text-decoration-none" data-bs-toggle="modal"
+                            data-bs-target="#courseModal" data-title="Computer Science & Engineering (CSE)"
+                            data-description="Master the fundamentals of computing, programming, and software development. Our CSE program covers algorithms, data structures, web development, and database management, preparing you for a thriving career in the tech industry."
+                            data-icon="fas fa-laptop-code" data-color="text-primary">Learn More <i
+                                class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- CPM -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-card h-100 p-4 bg-white rounded-4 shadow-sm hover-lift">
+                        <div
+                            class="icon-box bg-success-subtle text-success mb-4 rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="fas fa-seedling fa-2x"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Crop Production & Management (CPM)</h4>
+                        <p class="text-muted mb-4">Learn modern agricultural techniques, crop management, and
+                            sustainable farming.</p>
+                        <a href="#" class="btn-link text-success fw-bold text-decoration-none" data-bs-toggle="modal"
+                            data-bs-target="#courseModal" data-title="Crop Production & Management (CPM)"
+                            data-description="Learn modern agricultural techniques, crop management, and sustainable farming. This course focuses on soil science, pest management, and advanced crop production methods to revolutionize agriculture."
+                            data-icon="fas fa-seedling" data-color="text-success">Learn More <i
+                                class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Fisheries -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="course-card h-100 p-4 bg-white rounded-4 shadow-sm hover-lift">
+                        <div
+                            class="icon-box bg-info-subtle text-info mb-4 rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="fas fa-fish fa-2x"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Fisheries</h4>
+                        <p class="text-muted mb-4">Explore the science of aquaculture, fish farming, and marine resource
+                            management.</p>
+                        <a href="#" class="btn-link text-info fw-bold text-decoration-none" data-bs-toggle="modal"
+                            data-bs-target="#courseModal" data-title="Fisheries"
+                            data-description="Explore the science of aquaculture, fish farming, and marine resource management. Gain practical skills in breeding, rearing, and harvesting fish, contributing to the sustainable growth of the fisheries sector."
+                            data-icon="fas fa-fish" data-color="text-info">Learn More <i
+                                class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- FGM -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="course-card h-100 p-4 bg-white rounded-4 shadow-sm hover-lift">
+                        <div
+                            class="icon-box bg-danger-subtle text-danger mb-4 rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="fas fa-tshirt fa-2x"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Fashion & Garment Making (FGM)</h4>
+                        <p class="text-muted mb-4">Unleash your creativity in fashion design, textile science, and
+                            garment construction.</p>
+                        <a href="#" class="btn-link text-danger fw-bold text-decoration-none" data-bs-toggle="modal"
+                            data-bs-target="#courseModal" data-title="Fashion & Garment Making (FGM)"
+                            data-description="Unleash your creativity in fashion design, textile science, and garment construction. Learn pattern making, sewing techniques, and fashion illustration to launch your own label or work with top designers."
+                            data-icon="fas fa-tshirt" data-color="text-danger">Learn More <i
+                                class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- LMD -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="course-card h-100 p-4 bg-white rounded-4 shadow-sm hover-lift">
+                        <div
+                            class="icon-box bg-warning-subtle text-warning mb-4 rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="fas fa-cow fa-2x"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Livestock Management & Dairying (LMD)</h4>
+                        <p class="text-muted mb-4">Gain expertise in animal husbandry, dairy technology, and livestock
+                            health.</p>
+                        <a href="#" class="btn-link text-warning fw-bold text-decoration-none" data-bs-toggle="modal"
+                            data-bs-target="#courseModal" data-title="Livestock Management & Dairying (LMD)"
+                            data-description="Gain expertise in animal husbandry, dairy technology, and livestock health. This course covers breeding, nutrition, and disease management, preparing you for a successful career in the dairy and livestock industries."
+                            data-icon="fas fa-cow" data-color="text-warning">Learn More <i
+                                class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- MLT -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="course-card h-100 p-4 bg-white rounded-4 shadow-sm hover-lift">
+                        <div
+                            class="icon-box bg-secondary-subtle text-secondary mb-4 rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="fas fa-microscope fa-2x"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Medical Lab Technician (MLT)</h4>
+                        <p class="text-muted mb-4">Prepare for a career in healthcare with training in diagnostic lab
+                            procedures.</p>
+                        <a href="#" class="btn-link text-secondary fw-bold text-decoration-none" data-bs-toggle="modal"
+                            data-bs-target="#courseModal" data-title="Medical Lab Technician (MLT)"
+                            data-description="Prepare for a career in healthcare with training in diagnostic lab procedures. Learn to perform tests that help physicians diagnose and treat diseases, using advanced laboratory equipment."
+                            data-icon="fas fa-microscope" data-color="text-secondary">Learn More <i
+                                class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- MPHW [F] -->
+                <div class="col-md-6 col-lg-4 mx-auto" data-aos="fade-up" data-aos-delay="700">
+                    <div class="course-card h-100 p-4 bg-white rounded-4 shadow-sm hover-lift">
+                        <div
+                            class="icon-box bg-danger-subtle text-danger mb-4 rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="fas fa-user-nurse fa-2x"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Multi-Purpose Health Worker – Female</h4>
+                        <p class="text-muted mb-4">Specialized training for female health workers in community health
+                            and nursing basics.</p>
+                        <a href="#" class="btn-link text-danger fw-bold text-decoration-none" data-bs-toggle="modal"
+                            data-bs-target="#courseModal" data-title="Multi-Purpose Health Worker – Female"
+                            data-description="Specialized training for female health workers in community health and nursing basics. This course empowers women to provide essential healthcare services, maternal care, and health education in rural and urban areas."
+                            data-icon="fas fa-user-nurse" data-color="text-danger">Learn More <i
+                                class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h6 class="text-warning fw-bold text-uppercase ls-2">About Us</h6>
+                    <h2 class="fw-bold display-5 mb-4">Empowering Students for a <span class="text-primary">Brighter
+                            Future</span></h2>
+                    <p class="lead text-muted mb-4">Srichakra Vocational Junior College is dedicated to providing
+                        high-quality vocational education that bridges the gap between academic learning and industry
+                        requirements.</p>
+                    <p class="text-muted mb-4">Located in the heart of Dr. B.R. Ambedkar Konaseema District, we offer a
+                        diverse range of courses designed to equip students with practical skills and theoretical
+                        knowledge. Our state-of-the-art facilities and experienced faculty ensure that every student
+                        receives the best possible guidance to excel in their chosen field.</p>
+                    <div class="row g-4 mb-4">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span class="fw-bold">Practical Training</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span class="fw-bold">Industry Expert Faculty</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span class="fw-bold">Modern Labs</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span class="fw-bold">Career Guidance</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary rounded-pill px-4">Contact Us</a>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="position-relative">
+                        <div class="bg-primary position-absolute top-0 start-0 w-100 h-100 rounded-4"
+                            style="transform: rotate(3deg); opacity: 0.1; z-index: 0;"></div>
+                        <img src="assets/About.jpg" alt="About Srichakra College"
+                            class="img-fluid rounded-4 shadow-lg position-relative z-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="contact" class="py-5 bg-dark text-white position-relative overflow-hidden">
+        <div class="container py-5 position-relative z-2">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold mb-4">Contact Us</h2>
+                    <p class="lead mb-5 text-white-50">Have questions? Reach out to us for more information about our
+                        programs and admissions.</p>
+
+                    <div class="d-flex align-items-start mb-4">
+                        <div
+                            class="icon-box-sm bg-primary rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                            <i class="fas fa-map-marker-alt text-white"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Address</h5>
+                            <p class="text-white-50 mb-0">RTC Bus Stand, Beside Konaseema Mukha Dwaram – 533238,<br>Dr.
+                                B.R. Ambedkar Konaseema District, Andhra Pradesh, India</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start mb-4">
+                        <div
+                            class="icon-box-sm bg-primary rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                            <i class="fas fa-phone-alt text-white"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Phone</h5>
+                            <p class="text-white-50 mb-0">+91 99490 78069</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start">
+                        <div
+                            class="icon-box-sm bg-primary rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0">
+                            <i class="fas fa-envelope text-white"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Email</h5>
+                            <p class="text-white-50 mb-0">srichakravocjrcollege@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="map-container rounded-4 overflow-hidden shadow-lg border border-secondary">
+                        <!-- Placeholder for Map - Using a static image or iframe would go here. Using a styled div for now. -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.7686618579871!2d81.84310600981155!3d16.761813802281846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37bf8d5d5d5b5b%3A0xf6ef8716232d7f8f!2sSrichakra%20Vocational%20Junior%20College!5e0!3m2!1sen!2sin!4v1763896502901!5m2!1sen!2sin"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4 border-top border-secondary">
+        <div class="container text-center">
+            <p class="mb-0 text-white-50">&copy; 2025 Srichakra Voc Jr College. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Course Details Modal -->
+    <div class="modal fade" id="courseModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title fw-bold text-primary" id="courseModalTitle">Course Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-md-4 mb-3 mb-md-0 text-center">
+                            <div class="bg-light rounded-circle p-4 d-inline-flex align-items-center justify-content-center"
+                                style="width: 120px; height: 120px;">
+                                <i id="courseModalIcon" class="fas fa-book fa-3x text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h5 class="fw-bold mb-3">Course Overview</h5>
+                            <p id="courseModalDescription" class="text-muted">Course description goes here.</p>
+
+                            <h6 class="fw-bold mt-4 mb-2">Key Highlights:</h6>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Practical Hands-on
+                                    Training</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Industry-Relevant
+                                    Curriculum</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Experienced Instructors
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top-0">
+                    <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                        data-bs-target="#applyModal">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Apply Now Modal -->
+    <div class="modal fade" id="applyModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-modal border-0 text-white">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title fw-bold">Admissions Update</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center py-5">
+                    <div class="mb-4">
+                        <i class="fas fa-info-circle fa-4x text-warning mb-3"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Admissions Closed</h4>
+                    <p class="mb-4">Admissions for this academic year are now closed. For information about future
+                        enrollment opportunities, please contact us at <a href="mailto:srichakravocjrcollege@gmail.com"
+                            class="text-warning fw-bold">srichakravocjrcollege@gmail.com</a>.</p>
+                    <button type="button" class="btn btn-light rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>
